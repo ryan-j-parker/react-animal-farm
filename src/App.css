@@ -11,7 +11,3 @@ body {
 body {
   background-color: var(--color1);
 }
-
-.main {
-  object-fit: cover;
-}
