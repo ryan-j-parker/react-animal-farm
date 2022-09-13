@@ -42,3 +42,5 @@ export const animals = [
     left: '20%',
   },
 ];
+
+export default animals;

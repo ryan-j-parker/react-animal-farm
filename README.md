@@ -24,7 +24,7 @@ There is a list of animals provided for you in `data.js`, as well as an empty `<
 - `<Main />` should import `background.png` and set it as a background image on the `<main>` element
 - `<Main />` component should use a `.map` to loop through and render an `<Animal />` component for each animal listed in `data.js`
 - Animals should be positioned dynamically using the `style` attribute in JSX and props
-- <Animal /> should utlize the existing classes in `Animal.css`
+- <Animal /> should utilize the existing classes in `Animal.css`
 - App should be deployed on Netlify
 
 ### Rubric
@@ -43,4 +43,20 @@ There is a list of animals provided for you in `data.js`, as well as an empty `<
 
 ### Image Attribution
 
-Backgrounf Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=147828">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=147828">Pixabay</a>
+Background Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=147828">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=147828">Pixabay</a>
+
+Acceptance Criteria
+<Main /> should import background.png and set it as a background image on the <main> element
+<Main /> component should use a .map to loop through and render an <Animal /> component for each animal listed in data.js
+Animals should be positioned dynamically using the style attribute in JSX and props
+should utlize the existing classes in Animal.css
+
+App should be deployed on Netlify
+
+{animals.map((animal) => {
+      return <Animal key={animal.name} name={animal.name} type={animal.type} says={animal.says}
+    })}
+
+import background from './background.png';
+import Animal from './components/Animal';
+import animals from './data';
